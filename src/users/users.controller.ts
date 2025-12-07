@@ -17,7 +17,6 @@ import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
-  // Optional: Only allow admins to create users; normally register via /auth/register
   @UseGuards(JwtAuthGuard)
   @Post()
   create(@Body() dto: CreateUserDto) {
