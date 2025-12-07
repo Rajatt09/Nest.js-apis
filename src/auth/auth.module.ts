@@ -7,7 +7,8 @@ import { AuthController } from './auth.controller';
 // import { JwtStrategy } from './strategies/jwt.strategy';
 import { JwtStrategy } from './jwt.strategy';
 import { ConfigService } from '@nestjs/config';
-import { UsersModule } from 'src/users/users.module';
+// import { UsersModule } from 'src/users/users.module';
+import { UsersModule } from '../users/users.module';
 
 @Module({
   imports: [
