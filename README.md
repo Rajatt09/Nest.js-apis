@@ -126,6 +126,8 @@ Authorization: Bearer <token>
 npm run test
 ```
 
+![Testing](screenshots/test.png)
+
 - Test coverage:
 
 ```
@@ -138,27 +140,38 @@ npm run test:cov
 npm run test:e2e
 ```
 
-## Quick API Test URLs
+## API Test URLs
 
 - Signup: POST http://localhost:3000/auth/register
 
-  (screenshots/register.png)
+  ![Signup User](screenshots/register.png)
 
 - Login: POST http://localhost:3000/auth/login
-  (screenshots/login.png)
+
+  ![Login User](screenshots/login.png)
 
 - [ Protected Routes ]
 
--- Fetch User: GET http://localhost:3000/users
+1. Fetch User:
+
+GET http://localhost:3000/users
+
 GET http://localhost:3000/users/:id [for fetching details for specific user with user id]
-Requires header: `Authorization: Bearer <token>`  
- ![Fetch User](screenshots/fetch-user.png)
 
--- Update User: PUT http://localhost:3000/users/:id  
- Requires header: `Authorization: Bearer <token>`  
- ![Update User](screenshots/update-user.png)
+Requires header: `Authorization: Bearer <token>`
 
--- Delete User
-DELETE http://localhost:3000/users/:id  
- Requires header: `Authorization: Bearer <token>`  
- ![Delete User](screenshots/delete.png)
+![Fetch User](screenshots/fetch-user.png)
+
+2. Update User: PUT http://localhost:3000/users/:id
+
+Requires header: `Authorization: Bearer <token>`
+
+![Update User](screenshots/update-user.png)
+
+3. Delete User
+
+DELETE http://localhost:3000/users/:id
+
+Requires header: `Authorization: Bearer <token>`
+
+![Delete User](screenshots/delete.png)
